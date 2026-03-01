@@ -1,3 +1,13 @@
+1. Opens a handle to the vulnerable driver
+2. Maps physical memory into userspace
+3. Opens a handle to the System process
+4. Queries the SystemHandleInformation table of the current process for the obatined system handle leaking its EPROCESS address.
+5. Walks System EPROCESS ActiveProcessLinks flink until the PID of the current process is found.
+6. Patches the current process token with the token of System process
+7. Spawns a new powershell process.
+
+
+Tested on Win11 21H2
 ```
 C:\Users\Public>.\Eneio64-LPE.exe
 [+] Total physical memory: ~0x7fef2000 bytes
