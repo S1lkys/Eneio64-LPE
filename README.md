@@ -6,6 +6,8 @@
 6. Patches the current process token with the token of System process
 7. Spawns a new powershell process.
 
+Uses superfetch method for virtual2physical address translation instead of leaking CR3 and walking page tables.
+
 
 Tested on Win11 21H2
 ```
